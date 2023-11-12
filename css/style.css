@@ -33,6 +33,44 @@ a{
     padding-top: 80px;
 }
 
+/*title*/
+.title{
+    text-align: center;
+    padding: 120px 0 100px;
+}
+
+h2{
+    font-size: 44px;
+    position: relative;
+    margin-bottom: 20px;
+    font-family: "FuturaMaxiCGLight*";
+}
+
+h2::before{
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    left: 50%;
+    margin-top: 3px;
+    background-color: #231815;
+    width: 60px;
+    height: 1px;
+    transform: translateX(-50%);
+}
+
+.ja-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text{
+    padding-block: 40px;
+    line-height: 30px;
+}
+
+/**/
+
+
 /*-----------
     header
 ------------*/
@@ -70,7 +108,7 @@ nav li{
 .topimg img{
     height: 100vh;
     width: 100%;
-    object-fit:ccover;
+    object-fit: cover;
     position: relative;
 }
 
@@ -87,43 +125,6 @@ nav li{
 #case-study{
     margin-bottom: 110px;
 }
-
-/*title*/
-.title{
-    text-align: center;
-    padding: 120px 0 100px;
-}
-
-h2{
-    font-size: 44px;
-    position: relative;
-    margin-bottom: 20px;
-    font-family: "FuturaMaxiCGLight*";
-}
-
-h2::before{
-    position: absolute;
-    content: "";
-    bottom: -8px;
-    left: 50%;
-    margin-top: 3px;
-    background-color: #231815;
-    width: 60px;
-    height: 1px;
-    transform: translateX(-50%);
-}
-
-.ja-title{
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.text{
-    padding-block: 40px;
-    line-height: 30px;
-}
-
-/**/
 
 .flex{
     display: flex;
@@ -169,33 +170,45 @@ h2::before{
     margin: 0 auto;
     text-align: center;
     width: 400px;
+    height: 80px;
+}
+
+.button a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
     padding-block: 30px;
     border: 1px solid #000000;
     border-radius: 7px;
     position: relative;
 }
 
-.button::before{
+.button a::before{
     position: absolute;
     content: "";
     background: #000000;
     right: 40px;
-    top: 50%;
+    top: 40px;
     width: 25px;
     height: 1px;
 }
 
-.button::after{
+.button a::after{
     position: absolute;
     content: "";
     right: 40px;
-    top: 45%;
+    top: 37px;
     width: 7px;
     height: 7px;
 	border-top: 1px solid #000000;
 	border-right: 1px solid #000000;
 	-webkit-transform: rotate(25deg);
 	transform: rotate(45deg);
+}
+
+.button a:hover{
+    animation: all 0.3s;
+    opacity: 0.5;
 }
 
 #service{
@@ -236,6 +249,7 @@ footer{
 .topbutton{
     writing-mode: vertical-rl;
     color: #999999;
+    opacity: 0.5;
     position: absolute;
     bottom: 250px;
     right: 30px;
@@ -245,6 +259,11 @@ footer{
 
 .topbutton a{
     position: relative;
+}
+
+.topbutton a:hover{
+    animation: all 0.3s;
+    opacity: 0.5;
 }
 
 .topbutton a::before{
@@ -425,5 +444,73 @@ textarea{
     transform: rotate(45deg);
 }
 
+/*--------------
+    company
+--------------*/
+#company .textbox{
+    max-width: 800px;
+    margin: 0 auto;
+}
 
+#company p{
+    padding-bottom: 40px;
+}
+
+#company .text-right{
+    text-align: right;
+}
+
+.company-img{
+    width: 100%;
+    height: 260px;
+    margin-bottom: 110px;
+    position: relative;
+
+}
+
+.company-img img{
+    height: 260px;
+    object-fit: cover;
+}
+
+.company-img .photo-name{
+    font-size: 32px;
+    color: #ffffff;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+}
+
+#company dl{
+    display: flex;
+    flex-wrap:wrap;
+    border-top: 1px solid #E6E6E6;
+}
+
+#company dt{
+    width: 30%;
+    padding-block: 30px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+#company dd{
+    width: 70%;
+    padding-block: 30px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+#company ul{
+    display: flex;
+}
+
+#company li{
+    width: 35%;
+    padding-block: 30px;
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: 125px;
+}
+
+#company li:first-child{
+    width: 30%;
+}
 
