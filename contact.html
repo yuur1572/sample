@@ -20,7 +20,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="case-study">CASE STUDY</a></li>
+                <li><a href="index.html #case-study">CASE STUDY</a></li>
                 <li><a href="">SERVICE</a></li>
                 <li><a href="">COMPANY</a></li>
                 <li><a href="">ACCESS</a></li>
@@ -30,7 +30,7 @@
         </nav>
     </header>
 
-    <main id="contant">
+    <main id="contact">
         <div class="title">
             <h2>CONTACT</h2>
             <p class="ja-title">お問い合わせ</p>
@@ -41,44 +41,49 @@
 
         <div class="form">
             <form action="" method="">
-                <dl class="inner">
-                    <dt>お名前　　　　<span class="Form-Item-Label-Required">必須</span></dt>
-                    <dd><ul>
-                        <li><input type="text" class="Form-Item-Input" name="name" placeholder="姓"></li>
-                        <li><input type="text" class="Form-Item-Input" name="name" placeholder="名"></li>
-                    </ul></dd>
-                    
-                    <dt>お名前フリガナ<span class="Form-Item-Label-Required">必須</span></dt>
-                    <dd><ul>
-                        <li><input type="text" class="Form-Item-Input" name="name" placeholder="セイ"></li>
-                        <li><input type="text" class="Form-Item-Input" name="name" placeholder="メイ"></li>
-                    </ul></dd>
-                    
-                    <dt>御社名</dt>
-                    <dd><input type="text" name="company name" placeholder="株式会社社号合"></dd>
-                    
-                    <dt>御社名フリガナ</dt>
-                    <dd><input type="text" name="company name" placeholder="カブシキガイシャゴウヘイ"></dd>
-                    
-                    <dt>メールアドレス <span class="Form-Item-Label-Required">必須</span></dt>
-                    <dd><input type="text" name="email" placeholder="info@gohey.com"></dd>
-                    
-                    <dt>電話番号</dt>
-                    <dd><input type="text" name="tel" placeholder="052-000-999"></dd>
-                    
-                    <dt>郵便番号</dt>
-                    <dd><input type="text" class="form-Item-Input2" name="post code" placeholder="4520932"></dd>
-                    
-                    <dt>住所</dt>
-                    <dd><input type="text" name="company name" placeholder="愛知県清須市朝日愛宕 132"></dd>
-                    
-                    <dt>お問合せ内容　  <span class="Form-Item-Label-Required">必須</span></dt>
-                    <dd><textarea name="contact"></textarea></dd>
-                </dl>
+                <div class="Form-Item">
+                    <label>お名前　　　　　　<span class="Form-Item-Label-Required">必須</span></label>
+                    <input type="text" class="Form-Item-Input" name="name" placeholder="姓">
+                    <input type="text" class="Form-Item-Input" name="name" placeholder="名">
+                </div>
+                <div class="Form-Item">
+                    <label>お名前フリガナ　　<span class="Form-Item-Label-Required">必須</span></label>
+                    <input type="text" class="Form-Item-Input" name="name" placeholder="セイ">
+                    <input type="text" class="Form-Item-Input" name="name" placeholder="メイ">
+                </div>
+                <div class="Form-Item">
+                    <label>御社名</label>
+                    <input type="text" name="company name" placeholder="株式会社社合平">
+                </div>
+                <div class="Form-Item">
+                    <label>御社名フリガナ</label>
+                    <input type="text" name="company name" placeholder="カブシキガイシャゴウヘイ">
+                </div>
+                <div class="Form-Item">
+                    <label>メールアドレス　　<span class="Form-Item-Label-Required">必須</span></label>
+                    <input type="text" name="email" placeholder="info@gohey.com">
+                </div>
+                <div class="Form-Item">
+                    <label>電話番号</label>
+                    <input type="text" name="tel" placeholder="052-000-999">
+                </div>
+                <div class="Form-Item">
+                    <label>郵便番号</label>
+                    <input type="text" class="Form-Item-Input2" name="post code" placeholder="4520932">
+                </div>
+                <div class="Form-Item">
+                    <label>住所</label>
+                    <input type="text" name="company name" placeholder="愛知県清須市朝日愛宕 132">
+                </div>
+                <div class="Form-Item">
+                    <label class="last-label">お問合せ内容　  　<span class="Form-Item-Label-Required">必須</span></label>
+                    <textarea name="contact"></textarea>
+                </div>
             
-                <div class="button">
+                <div class="submit-button">
                     <input type="submit" value="送信確認画面へ">
                 </div>
+
             </form>
         </div>
     </main>
